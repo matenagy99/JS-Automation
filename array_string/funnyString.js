@@ -26,5 +26,3 @@ function funnyString(s) {
     return "Funny";
     //return JSON.stringify(oResult) === JSON.stringify(cResult) ? "Funny": "Not Funny";
 }
-
-console.log(funnyString("ivvkx"));
