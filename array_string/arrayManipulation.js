@@ -3,24 +3,12 @@ function arrayManipulation(n, queries) {
     let m = queries.length;
     let result = new Array(n).fill(0);
 
-    let updates = 0;
-
-    while (updates < m) {
-
-        // let aIndex = queries[updates][0];
-        //let bIndex = queries[updates][1];
-        // let k = 
-
-        for (let i = queries[updates][0] - 1; i < queries[updates][1]; i++) {
-            result[i] += queries[updates][2];; 
+    for (let update = 0; update < m; update++) {
+        for (let i = queries[update][0] - 1; i < queries[update][1]; i++) {
+            result[i] += queries[update][2];; 
         }
-
-        updates++;
+        
     }
 
     return Math.max.apply(null, result);
 }
-
-const queries = [[1, 2, 100], [2, 5, 100], [3, 4, 100]];
-
-console.log(arrayManipulation(5, queries));
