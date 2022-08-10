@@ -1,9 +1,9 @@
 let fruits = 'Banana Apple';
 
-function splitArray(array, token) {
-    return array.split(token);
+function splitArrayBy(array, separator) {
+    return array.split(separator);
 }
 
-fruits = splitArray(fruits, " ");
+fruits = splitArrayBy(fruits, " ");
 
 console.log(fruits);
