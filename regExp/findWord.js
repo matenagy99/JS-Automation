@@ -1,3 +1,7 @@
+/* 
+https://www.hackerrank.com/challenges/find-a-word/problem?isFullScreen=true
+*/
+
 function processData(input) {
     //Enter your code here
     const lines = input.split(/\n/);
