@@ -25,4 +25,3 @@ hasSpeaker.forEach((talk) => {
 
 // összesíti, hogy az adott talk hányszor fordul elő az eventek között
 console.log(hasSpeaker);
-
